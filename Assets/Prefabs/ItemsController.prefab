@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1355698281288102460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355698281288102462}
+  - component: {fileID: 1355698281288102461}
+  m_Layer: 0
+  m_Name: ItemsController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1355698281288102462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355698281288102460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6911706, y: -0.2571257, z: -3.4690056}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1355698281288102461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355698281288102460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 568f60da2f6f035488d99f02cd60ba95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  usualItems:
+  - {fileID: -1462763007571176667, guid: cb75b605ef38b864a9a455638dd2a327, type: 3}
+  - {fileID: -1462763007571176667, guid: 7990196513b4f524fab56333f0d56507, type: 3}
+  - {fileID: -1462763007571176667, guid: f614460ab7139f14ea6e33808fa29aed, type: 3}
+  - {fileID: -1462763007571176667, guid: b90138151a4d4754698b0535e052b003, type: 3}
+  specialItems:
+  - {fileID: 6107513927797773153, guid: 1b1230363e7c94b44a7a60ccd2ac8dab, type: 3}
+  - {fileID: 6107513927797773153, guid: 9c7094af9fb34214caf7881153943551, type: 3}
+  - {fileID: 5224601749284253476, guid: b77f01c23558e7e4a8788b5324d94415, type: 3}
+  - {fileID: 5224601749284253476, guid: 724812526514cfe45a4185fa85f554a7, type: 3}
+  specialItemGenerationProbability: 55
+  itemsGeneratedToIncreaseDifficulty: 5
+  itemDropSpeedFactorMax: 30
+  itemGenerationIntervalMin: 0.6
+  itemGenerationIntervalMax: 1.5
+  itemGenerationIntervalChangeStep: 0.05
+  itemMaxSize: 1
