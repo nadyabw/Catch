@@ -53,7 +53,7 @@ MonoBehaviour:
   - {fileID: 6107513927797773153, guid: 9c7094af9fb34214caf7881153943551, type: 3}
   - {fileID: 5224601749284253476, guid: b77f01c23558e7e4a8788b5324d94415, type: 3}
   - {fileID: 5224601749284253476, guid: 724812526514cfe45a4185fa85f554a7, type: 3}
-  specialItemGenerationProbability: 55
+  specialItemGenerationProbability: 16
   itemsGeneratedToIncreaseDifficulty: 5
   itemDropSpeedFactorMax: 30
   itemGenerationIntervalMin: 0.6

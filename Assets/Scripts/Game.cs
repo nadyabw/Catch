@@ -10,7 +10,7 @@ public class Game : MonoBehaviour
     [SerializeField] private Transform canvasTransform;
     [SerializeField] private Text scoreText;
     [SerializeField] private Text lifesText;
-    
+
 
     [Header("Base Settings")] [SerializeField]
     private int lifesTotal;
@@ -20,7 +20,6 @@ public class Game : MonoBehaviour
     private static bool isPaused;
     private static bool isFinished;
     private GameObject pauseView;
-    
 
 
     public static bool IsPaused
@@ -122,7 +121,6 @@ public class Game : MonoBehaviour
 
     private void HandleUsualItemCatchFailed(UsualItem item)
     {
-        
         ChangeLifes(-1);
     }
 
@@ -131,10 +129,10 @@ public class Game : MonoBehaviour
         ChangeLifes(item.LifesNumber);
     }
 
-     private void HandleScoreItemCatched(ScoreItem item)
-     {
-         ChangeScore(item.Score);
-     }
+    private void HandleScoreItemCatched(ScoreItem item)
+    {
+        ChangeScore(item.Score);
+    }
 
     private void HandleGameOverClosed()
     {
@@ -143,7 +141,7 @@ public class Game : MonoBehaviour
 
         SceneManager.LoadScene(SceneNames.MainMenu);
     }
-    
+
     private void ChangeScore(int score)
     {
         totalScore += score;
@@ -152,6 +150,7 @@ public class Game : MonoBehaviour
         {
             totalScore = 0;
         }
+
         UpdateScoreText();
     }
 
@@ -190,6 +189,7 @@ public class Game : MonoBehaviour
         UpdateScoreText();
         UpdateLifesText();
     }
+
     private void UpdateScoreText()
     {
         scoreText.text = $"{totalScore}";

@@ -5,11 +5,8 @@ public class LifesItem : BaseItem
 {
     #region Variables
 
-    [Header("Base settings")]
-
-    [SerializeField] private int lifesNumber = 1;
-
-   
+    [Header("Base settings")] [SerializeField]
+    private int lifesNumber = 1;
 
     #endregion
 
@@ -27,8 +24,6 @@ public class LifesItem : BaseItem
 
     protected override void HandleCatch()
     {
-     
-
         OnCatched?.Invoke(this);
     }
 

@@ -5,11 +5,9 @@ public class UsualItem : BaseItem
 {
     #region Variables
 
-    [Header("Base Settings")]
+    [Header("Base Settings")] [SerializeField]
+    private int scoreForCatch = 10;
 
-    [SerializeField] private int scoreForCatch = 10;
-
- 
     #endregion
 
     #region Properties
@@ -33,7 +31,7 @@ public class UsualItem : BaseItem
 
     protected override void HandleLoss()
     {
-        if(scoreForCatch > 0)
+        if (scoreForCatch > 0)
         {
             OnCatchFailed?.Invoke(this);
         }
